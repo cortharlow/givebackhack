@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto);
+
+
+/*
+font-family: 'Roboto Slab', serif;
+
+font-family: 'Roboto', sans-serif;
+*/
+
+#splash-wrap {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('https://images.unsplash.com/uploads/1413548921627cb0e00f3/80652197?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dc1770334b5b4bee5e04ff78ee964313');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#splash-content {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.splash-header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 400%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -4%;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#splash-top {
+  margin-top: -8%;
+}
+.splash-logo {
+  max-width: 500px;
+  margin-left: 28%;
+  margin-top: -4%;
+  margin-bottom: 0;
+}
+.splash-new {
+  width: 200px;
+  background-color: #4e96cd;
+  border-radius: 5px;
+  line-height: 35px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px solid black;
+}
+.splash-login {
+  float: right;
+  margin-top: 1%;
+  margin-right: 2%;
+  width: 200px;
+  color: #ffffff;
+  border: 0px solid black;
+}
+.splash-detail {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 200%;
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

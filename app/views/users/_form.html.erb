@@ -1,0 +1,21 @@
+<%= form_for @user do |f| %>
+
+  <% if @user.errors.any? %>
+    <div id="error_message">
+      <ul>
+        <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="item-form">
+    <%= f.text_field :name, :class => "form-field", :placeholder => "Name", :style => "color:black;" %><br>
+    <%= f.text_field :email, :class => "form-field", "placeholder" => "Email", :style => "color:black" %><br>
+    <%= f.password_field :password, :class => "form-field", "placeholder" => "Password", :style => "color:black" %><br>
+    <%= f.password_field :password_confirmation, :class => "form-field", "placeholder" => "Password Confirmation", :style => "color:black"%><br>
+    <%= f.submit "Submit", :class => "nav-btn", :id => "submit-btn" %>
+    </p>
+  </div>
+<% end %>

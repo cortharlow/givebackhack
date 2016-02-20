@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
 
-  before_action :authorize, except: [:new, :create]
+
 
   def index
-    render 'lists/index'
+    render 'splashes/index'
   end
 
   def show
@@ -19,7 +19,8 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      redirect_to user_lists_path(current_user)
+      # redirect_to user_lists_path(current_user)
+      redirect_to ('/')
     else
       render "new"
     end
