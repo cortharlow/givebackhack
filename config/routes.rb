@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   resources :users do
     resources :interests
   end
-  resources :companies do
-    resources :openings
-  end
+  # resources :companies do
+  #   resources :openings
+  # end
+  resources :companies
+  resources :openings
 
 
 get '/login' => 'sessions#new'

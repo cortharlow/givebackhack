@@ -1,7 +1,23 @@
 <%= stylesheet_link_tag "style.css" %>
-<h1>HELLO</h1>
+<div id="splash-wrap">
+  <%= link_to(image_tag("http://i.imgur.com/lnj265J.png", :alt => "Promo Image", :class => "join-icon"), root_path) %>
+  <div id="interest-content">
+    <h1 class="interest-header">What skills do you want to try?</h1>
+    <%= form_for :interest, :url => {:action => 'create'}, :method => :post do |f| %>
+        <ul class="interest-list">
+          <li id="hvr-grow"><%= f.check_box :technology %><%= f.label "Technology" %></li>
+          <li id="hvr-grow"><%= f.check_box :medical %><%= f.label "Medical" %></li>
+          <li id="hvr-grow"><%= f.check_box :construction %><%= f.label "Construction" %> </li>
+          <li id="hvr-grow"><%= f.check_box :create %><%= f.label "Creative" %></li>
+          <li id="hvr-grow"><%= f.check_box :culinary %><%= f.label "Culinary" %></li>
+          <li id="hvr-grow"><%= f.check_box :industrial %><%= f.label "Industrial" %> </li>
+          <li id="hvr-grow"><%= f.check_box :mechanical %><%= f.label "Mechanical" %> </li>
+        </ul>
+        <div id="center">
+          <%= f.submit "Submit", :class => "interest-btn", :id => "hvr-grow" %>
+        </div>
+    <% end %>
+  </div>
+</div>
 
-<% form_for :interest, url: new_user_interest_path do |f| %>
-  <%= f.check_box :technology %>
-  <%= f.check_box :culinary %>
-<% end %>
+<!-- :interest, url: user_interests_path(@interest) -->

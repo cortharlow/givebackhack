@@ -160,7 +160,151 @@ font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   border: 0px solid black;
 }
-
 .submit-btn:hover {
   background-color: #3472f7;
+}
+#error-message {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 100%;
+  color: #cb3f43;
+  margin-bottom: 2%;
+}
+
+/*** INTERESTS ***/
+input[type='checkbox'] {
+  width: 20px;
+  height: 13px;
+  top: -20px;
+}
+#interest-content {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 80%;
+}
+.interest-header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 400%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 8%;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.interest-list {
+  width: 50%;
+  list-style: none;
+  margin-top: -2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.interest-list li {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+  line-height: 120%;
+  color: #ffffff;
+  background-color: #cb3f43;
+  margin-bottom: 4%;
+  border-bottom: 10px solid #4e96cd;
+  padding-left: 32%;
+}
+#center {
+  text-align: center;
+}
+.interest-btn {
+  width: 188px;
+  background-color: #4e96cd;
+  border-radius: 5px;
+  line-height: 35px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin-top: 20px;
+  border: 0px solid black;
+}
+#hvr-grow {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+#hvr-grow:hover, #hvr-grow:focus, #hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*** OPENING ***/
+.listing-content {
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.filter {
+  float: left;
+  width: 20%;
+  background-color: #ffffff;
+  border-radius: 5%;
+}
+.listings {
+  float: right;
+  width: 70%;
+  background-color: #ffffff;
+  padding-bottom: 5%;
+}
+.company-header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 400%;
+  text-align: center;
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.title {
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 2px solid #cb3f43;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+/*** Company Listing ***/
+
+#background {
+  background-color: #4e96cd;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+#company-profile {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#company-profile img {
+  width: 130%;
+  margin-left: -14%;
 }

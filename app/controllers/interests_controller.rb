@@ -13,7 +13,7 @@ class InterestsController < ApplicationController
     @interest.user_id = current_user.id
 
     if @interest.save
-      redirect_to company_openings_path
+      redirect_to openings_path
     else
       render "new"
     end
