@@ -7,6 +7,8 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Roboto', sans-serif;
 */
 
+/*** Splash Screen ***/
+
 #splash-wrap {
   min-height: 100%;
   min-width: 1024px;
@@ -53,17 +55,42 @@ font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
   border: 0px solid black;
+}
+.splash-new:hover {
+  background-color: #3472f7;
 }
 .splash-login {
   float: right;
   margin-top: 1%;
   margin-right: 2%;
-  width: 200px;
+  width: 100px;
   color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
   border: 0px solid black;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+.splash-company {
+  float: right;
+  margin-top: 1%;
+  margin-right: 2%;
+  width: 156px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  border: 0px solid black;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 .splash-detail {
   font-family: 'Roboto', sans-serif;
@@ -75,4 +102,65 @@ font-family: 'Roboto', sans-serif;
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+/*** SIGN UP ***/
+
+.join-header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 400%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10%;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.join-icon {
+  width: 100px;
+  float: left;
+}
+.item-form {
+  text-align: center;
+}
+.form-field {
+  margin-bottom: 5px;
+  width: 180px;
+  height: 35px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  padding-left: 5px;
+  background-color: white;
+  color: #222222;
+}
+.form-area {
+  margin-bottom: 2px;
+  width: 178px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  padding-left: 5px;
+  background-color: white;
+  color: #222222;
+}
+.submit-btn {
+  width: 188px;
+  background-color: #4e96cd;
+  border-radius: 5px;
+  line-height: 35px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  margin-top: 20px;
+  border: 0px solid black;
+}
+
+.submit-btn:hover {
+  background-color: #3472f7;
 }

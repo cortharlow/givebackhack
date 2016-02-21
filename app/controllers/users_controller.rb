@@ -19,8 +19,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      # redirect_to user_lists_path(current_user)
-      redirect_to ('/')
+      redirect_to new_user_interest_path(current_user)
     else
       render "new"
     end

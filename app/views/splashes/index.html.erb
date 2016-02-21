@@ -2,12 +2,12 @@
 
 <div id="splash-wrap">
   <%= button_to "Login", login_path, :class => "splash-login" %>
+  <%= button_to "Are You A Company?", login_path, :class => "splash-company" %>
   <div id="splash-content">
     <img class="splash-logo" src="http://i.imgur.com/lnj265J.png" title="source: imgur.com" /></a>
     <h1 id="splash-top" class="splash-header">Unsure about college?</h1>
     <h1 class="splash-header">Find your passion.
     <%= button_to "Start Today", new_user_path, method: "get", :class => "splash-new", :id => "left-btn" %>
-    <!-- <%= button_to "Login", login_path, :class => "splash-login" %> -->
-    <h1 class="splash-detail">Shadow local companies to help find what you're interested in.</h1>
+    <h1 class="splash-detail">Shadow local companies to learn about the Alternatives.</h1>
   </div>
 </div>

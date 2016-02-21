@@ -1,4 +1,4 @@
-class CreateCompany < ActiveRecord::Migration
+class CreateCompanies < ActiveRecord::Migration
   def change
     create_table :companies do |t|
       t.string :name
@@ -8,8 +8,6 @@ class CreateCompany < ActiveRecord::Migration
       t.string :email
       t.string :phone
       t.string :website
-
-      t.timestamps
     end
   end
 end

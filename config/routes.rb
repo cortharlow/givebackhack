@@ -2,7 +2,13 @@ Rails.application.routes.draw do
 
   root 'splashes#index'
 
-  resources :users
+  resources :users do
+    resources :interests
+  end
+  resources :companies do
+    resources :openings
+  end
+
 
 get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'

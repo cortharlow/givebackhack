@@ -1,6 +1,7 @@
 class CreateInterests < ActiveRecord::Migration
   def change
     create_table :interests do |t|
+      t.integer :user_id
       t.boolean :technology, default: false
       t.boolean :medical, default: false
       t.boolean :construction, default: false
@@ -8,7 +9,6 @@ class CreateInterests < ActiveRecord::Migration
       t.boolean :culinary, default: false
       t.boolean :industrial, default: false
       t.boolean :mechanical, default: false
-      
     end
   end
 end

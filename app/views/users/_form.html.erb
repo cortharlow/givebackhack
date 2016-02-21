@@ -13,9 +13,11 @@
   <div class="item-form">
     <%= f.text_field :name, :class => "form-field", :placeholder => "Name", :style => "color:black;" %><br>
     <%= f.text_field :email, :class => "form-field", "placeholder" => "Email", :style => "color:black" %><br>
+    <%= f.text_area :skills, :class => "form-area", :placeholder => "What are your skills?", :style => "color:black" %><br>
+    <%= f.text_area :about, :class => "form-area", :placeholder => "Tell us a little about you" %><br>
     <%= f.password_field :password, :class => "form-field", "placeholder" => "Password", :style => "color:black" %><br>
     <%= f.password_field :password_confirmation, :class => "form-field", "placeholder" => "Password Confirmation", :style => "color:black"%><br>
-    <%= f.submit "Submit", :class => "nav-btn", :id => "submit-btn" %>
+    <%= f.submit "Submit", :class => "submit-btn" %>
     </p>
   </div>
 <% end %>
